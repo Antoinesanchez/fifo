@@ -1,0 +1,50 @@
+{
+  "name": "fifo",
+  "version": "1.0.0",
+  "description": "A basic fifo queue exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start:dev": "npx nodemon",
+    "fullinstall": "(cd front && npm install) && npm install",
+    "build": "rimraf ./build && tsc",
+    "client": "(cd front && npm start)",
+    "server": "node build/back/index.js",
+    "start": "npm run fullinstall && npm run build && concurrently \"npm run server\" \"npm run client\"",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "fifo",
+    "queue"
+  ],
+  "author": "Antoine Sanchez",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-react": "^7.22.3",
+    "@babel/preset-typescript": "^7.21.5",
+    "@types/node": "^20.2.3",
+    "@types/react-dom": "^18.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.41.0",
+    "nodemon": "^2.0.22",
+    "prettier": "2.8.8",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "socket.io": "^4.6.2"
+  }
+}

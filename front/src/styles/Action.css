@@ -1,0 +1,12 @@
+.Action {
+  height: 40px;
+  max-width: 40px;
+  border-radius: 10px;
+  border-width: 1px;
+  outline: #ffffff1a;
+  box-shadow: 0 4px 10px #0000001a;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  flex: 1 0 9.5%;
+  margin: 10px;
+}

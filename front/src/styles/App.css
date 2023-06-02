@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  background: #cce1fc;
+  height: 100%;
+  width: 60%;
+  position: relative;
+  top: 50%;
+  display: inline-block;
+}

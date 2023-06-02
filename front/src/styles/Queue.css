@@ -1,0 +1,14 @@
+.Queue {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80px;
+  justify-content: center;
+  border-radius: 20px;
+  background: #cce1fc;
+  box-shadow: 10px 10px 20px #8f9eb0, -10px -10px 20px #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
